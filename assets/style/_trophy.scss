@@ -1,0 +1,257 @@
+section.trophy-section {
+    width: 100%;
+    margin-top: 10vw;
+
+
+
+    .start-journey {
+        color: #FFF;
+        font-family: $font-1;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 7px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+
+    .years-champions {
+        text-align: center;
+
+        .year-card {
+            max-width: 1620px;
+
+            &.left {
+                .card-content {
+                    @media (max-width:1100px) {
+                        flex-direction: column-reverse;
+
+                    }
+
+                    .champion-info {
+                        align-items: flex-start;
+                        padding-left: 35px;
+                        text-align: left;
+                        background: linear-gradient(270deg, #000 0%, #16181B 100%);
+                        border-top-left-radius: 25px;
+                        border-bottom-left-radius: 25px;
+
+
+                        @media (max-width:1100px) {
+                            flex-direction: row;
+                        }
+
+
+                        @media (max-width:650px) {
+                            flex-direction: column;
+                            width: 100%;
+                            align-items: center;
+                            text-align: center;
+                        }
+
+                        .trophy-icon {
+                            margin-left: -15px;
+
+                            @media (max-width:1200px) {
+                                margin-left: 0;
+                            }
+
+                            @media (max-width:1100px) {
+                                margin-right: 40px !important;
+                            }
+
+
+                            @media (max-width:650px) {
+                                margin: 0 0 20px !important;
+                            }
+                        }
+
+                        p {
+                            padding-right: 15px
+                        }
+                    }
+                }
+            }
+
+            &.right {
+                .card-content {
+                    @media (max-width:1100px) {
+                        flex-direction: column;
+
+                    }
+
+                    .champion-info {
+                        align-items: flex-end;
+                        text-align: right;
+                        border-top-right-radius: 25px;
+                        border-bottom-right-radius: 25px;
+
+                        padding-right: 35px;
+                        background: linear-gradient(-270deg, #000 0%, #16181B 100%);
+
+                        @media (max-width:1100px) {
+                            flex-direction: row-reverse;
+                        }
+
+                        @media (max-width:650px) {
+                            flex-direction: column;
+                            width: 100%;
+                            align-items: center;
+                            text-align: center;
+                        }
+
+                        .trophy-icon {
+                            margin-right: -15px;
+
+                            @media (max-width:1200px) {
+                                margin-right: 0;
+                            }
+
+                            @media (max-width:1100px) {
+                                margin-left: 40px !important;
+                            }
+
+                            @media (max-width:650px) {
+                                margin: 0 0 20px !important;
+                            }
+                        }
+
+                        p {
+                            padding-left: 15px;
+                        }
+                    }
+                }
+            }
+
+            .card-content {
+                flex-direction: row;
+                height: 100%;
+
+                .champion-info {
+                    width: 42%;
+                    height: stretch;
+
+
+
+
+                    @media (max-width:1100px) {
+                        width: 70vw;
+                        height: auto;
+                        padding-bottom: 20px;
+                        justify-content: center;
+                        align-items: center !important;
+
+                        padding: 50px 10px;
+
+                    }
+
+                    .trophy-icon {
+                        width: auto;
+                        height: auto;
+                        margin-bottom: 15px;
+
+                        @media (max-width:1400px) {
+                            max-width: 90px;
+                        }
+
+                        @media (max-width:1100px) {
+                            margin-bottom: 0 !important;
+                            margin-right: 20px;
+                        }
+                    }
+
+                    h4 {
+                        color: #FFF;
+                        font-family: $font-2;
+                        font-size: 40px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 48px;
+                        margin-left: 23px;
+                        letter-spacing: 2px;
+
+                        @media (max-width:1400px) {
+                            font-size: 30px;
+                            line-height: 30px;
+                            margin-left: 0px;
+                        }
+                    }
+
+                    h5 {
+                        font-family: $font-1;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        background: linear-gradient(270deg, #4F2902 0%, #EDBC5D 100%);
+                        background-clip: text;
+
+                        margin-left: 23px;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+
+
+
+                        @media (max-width:1400px) {
+                            font-size: 17px;
+
+                            margin-left: 0px;
+                        }
+                    }
+
+                    p {
+                        color: #FFF;
+                        max-width: 500px;
+                        font-family: Montserrat;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        margin: 15px 0 0px 23px;
+
+                        @media (max-width:1400px) {
+                            font-size: 12px;
+
+                            margin-left: 0px;
+                        }
+                    }
+                }
+
+                .img-champion {
+                    width: 58%;
+                    height: auto;
+                    overflow: hidden;
+                    position: relative;
+                    z-index: 2;
+                    padding: 10px;
+                    background: linear-gradient(to bottom,
+                            #EAB95B 0%,
+                            #D0A14D 15%,
+                            #B6893E 30%,
+                            #9C712E 50%,
+                            #835920 70%,
+                            #694111 85%,
+                            #5e3206 100%);
+
+
+                    @media (max-width:1100px) {
+                        width: 70vw;
+                        height: auto;
+                        padding-bottom: 20px;
+
+                    }
+
+                    @media (max-width:650px) {
+                        width: 100%;
+                    }
+
+                    img {
+                        width: 100vw;
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

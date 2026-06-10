@@ -1,0 +1,852 @@
+#outras-ofertas-relacionadas {
+  background-color: #000000 !important;
+  max-width: 1920px !important;
+  margin: 0 auto;
+}
+
+.conteudo-produto > .container {
+  max-width: 100%;
+}
+
+.conteudo-produto > .container .descricao-produto {
+  padding: 0;
+}
+
+.caracteristicas-produto,
+.produtos-relacionados {
+  max-width: 1200px;
+  margin: 50px auto 0 auto;
+}
+
+#lp-shirt-fallen-trophy {
+  box-sizing: border-box;
+  margin: 0;
+  width: 100vw;
+  padding: 0;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  background: #000;
+  color: var(--text);
+  overflow: hidden;
+}
+#lp-shirt-fallen-trophy .skip-link {
+  position: absolute;
+  left: -9999px;
+}
+#lp-shirt-fallen-trophy .skip-link:focus {
+  left: 16px;
+  top: 16px;
+  z-index: 99;
+  background: #fff;
+  color: #000;
+  padding: 8px 12px;
+}
+#lp-shirt-fallen-trophy .page {
+  width: min(1920px, 100%);
+  margin: 0 auto;
+}
+#lp-shirt-fallen-trophy .hero {
+  position: relative;
+  height: 100%;
+  min-height: 800px;
+  padding: 24px 64px 72px;
+  background: url(../images/bg.webp), radial-gradient(circle at 50% 8%, rgba(198, 123, 21, 0.42), transparent 34%), linear-gradient(180deg, #20160d 0%, #040404 45%, #020202 100%);
+}
+@media (max-width: 650px) {
+  #lp-shirt-fallen-trophy .hero {
+    overflow: hidden;
+    max-height: 600px;
+  }
+}
+#lp-shirt-fallen-trophy .title-lp {
+  text-align: center;
+  font-size: 60px;
+  color: #fff;
+  font-family: "Saira", sans-serif;
+  font-weight: bold;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+@media (max-width: 900px) {
+  #lp-shirt-fallen-trophy .title-lp {
+    font-size: 40px;
+  }
+}
+#lp-shirt-fallen-trophy .hero__viewport {
+  position: relative;
+  margin: 24px auto 0;
+  width: min(1080px, 100%);
+  height: 470px;
+}
+@media (max-width: 900px) {
+  #lp-shirt-fallen-trophy .hero__viewport {
+    height: 700px;
+  }
+}
+#lp-shirt-fallen-trophy .hero__slide {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.72);
+  opacity: 0;
+  filter: blur(2.5px);
+  transition: transform 0.45s ease, opacity 0.45s ease, filter 0.45s ease;
+}
+#lp-shirt-fallen-trophy .hero__slide.is-active {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  filter: blur(0);
+  z-index: 3;
+}
+#lp-shirt-fallen-trophy .hero__slide.is-prev {
+  transform: translate(calc(-50% - 290px), -50%) scale(0.88);
+  opacity: 0.26;
+  z-index: 2;
+}
+#lp-shirt-fallen-trophy .hero__slide.is-next {
+  transform: translate(calc(-50% + 290px), -50%) scale(0.88);
+  opacity: 0.26;
+  z-index: 2;
+}
+#lp-shirt-fallen-trophy .hero__shirt {
+  width: 300px;
+  height: 388px;
+  border-radius: 36% 36% 18% 18%;
+  background: linear-gradient(160deg, #2d2d2d 0%, #101010 62%, #050505 100%);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.72);
+  position: relative;
+}
+#lp-shirt-fallen-trophy .hero__shirt::before {
+  content: "";
+  position: absolute;
+  top: 134px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 34px;
+  border: 2px solid #ddd;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.09), rgba(200, 150, 47, 0.45));
+}
+#lp-shirt-fallen-trophy .shirt-trophy {
+  max-width: 40vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+}
+@media (max-width: 900px) {
+  #lp-shirt-fallen-trophy .shirt-trophy {
+    max-width: 60vw;
+    transform: translate(-50%, -50%);
+  }
+}
+@media (max-width: 650px) {
+  #lp-shirt-fallen-trophy .shirt-trophy {
+    transform: translate(-50%, -90%);
+  }
+}
+#lp-shirt-fallen-trophy .hero__shirt--alt {
+  background: linear-gradient(170deg, #181818 0%, #232323 42%, #0e0e0e 100%);
+}
+#lp-shirt-fallen-trophy .hero__shirt--alt-2 {
+  background: linear-gradient(160deg, #222 0%, #090909 60%, #171717 100%);
+}
+#lp-shirt-fallen-trophy .hero__nav {
+  position: absolute;
+  top: 44%;
+  transform: translateY(-50%);
+  border: 0;
+  background: transparent;
+  color: #5c5c5c;
+  font-size: 42px;
+  cursor: pointer;
+  padding: 6px;
+  z-index: 1000;
+}
+#lp-shirt-fallen-trophy .hero__nav:hover {
+  color: #ececec;
+  outline: none;
+}
+#lp-shirt-fallen-trophy .hero__nav:focus-visible {
+  color: #ececec;
+  outline: none;
+}
+#lp-shirt-fallen-trophy .hero__nav--prev {
+  left: 38px;
+}
+#lp-shirt-fallen-trophy .hero__nav--next {
+  right: 38px;
+}
+#lp-shirt-fallen-trophy .hero__controls {
+  position: absolute;
+  right: 92px;
+  bottom: 52px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+#lp-shirt-fallen-trophy .hero__dots {
+  display: flex;
+  gap: 6px;
+}
+#lp-shirt-fallen-trophy .hero__dot {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #707070;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 1px;
+}
+#lp-shirt-fallen-trophy .hero__dot.is-active {
+  border-color: var(--gold);
+  background: #f0c440;
+  border-radius: 1px;
+}
+#lp-shirt-fallen-trophy .hero__toggle {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(0, 0, 0, 0.28);
+  color: #ddd;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+#lp-shirt-fallen-trophy .timeline {
+  position: relative;
+  padding: 10px clamp(24px, 8vw, 160px) 64px;
+}
+#lp-shirt-fallen-trophy .timeline::before {
+  content: "";
+  position: absolute;
+  top: 70px;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  background: linear-gradient(var(--gold), rgba(200, 150, 47, 0.35));
+}
+#lp-shirt-fallen-trophy .timeline__title {
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 5px;
+  margin: 0 0 38px;
+}
+#lp-shirt-fallen-trophy .event {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-bottom: 46px;
+}
+#lp-shirt-fallen-trophy .event__text {
+  min-height: 245px;
+  padding: 34px;
+  background: radial-gradient(circle at top, #0d162a, #060a12 72%, #050505);
+}
+#lp-shirt-fallen-trophy .event__text h3 {
+  margin: 10px 0 8px;
+  font-size: clamp(29px, 2.15vw, 40px);
+  line-height: 1;
+}
+#lp-shirt-fallen-trophy .event__text p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.45;
+  max-width: 44ch;
+}
+#lp-shirt-fallen-trophy .event__date {
+  margin: 0 0 10px;
+  color: var(--gold-soft);
+  font-weight: 600;
+  font-size: 13px;
+}
+#lp-shirt-fallen-trophy .event__logo {
+  display: inline-flex;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #e5e5e5;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+#lp-shirt-fallen-trophy .event__image {
+  min-height: 300px;
+  border: 3px solid var(--gold);
+  background-size: cover;
+  background-position: center;
+}
+#lp-shirt-fallen-trophy .event__image--trophy {
+  background-image: linear-gradient(130deg, #061423 0%, #14a2a0 46%, #281b9b 100%);
+}
+#lp-shirt-fallen-trophy .event__image--player {
+  background-image: linear-gradient(130deg, #1f577f 0%, #0d243d 42%, #282828 100%);
+}
+#lp-shirt-fallen-trophy .event__image--player-2 {
+  background-image: linear-gradient(130deg, #181818 0%, #1d3f62 52%, #0d0d0d 100%);
+}
+#lp-shirt-fallen-trophy .event--left-image .event__image {
+  order: -1;
+}
+#lp-shirt-fallen-trophy .ethics {
+  margin: 0 clamp(24px, 8vw, 160px) 90px;
+  border: 1px solid rgba(200, 150, 47, 0.55);
+  padding: 22px 24px;
+  background: rgba(9, 9, 9, 0.55);
+}
+#lp-shirt-fallen-trophy .ethics h2 {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+#lp-shirt-fallen-trophy .ethics ul {
+  margin: 0;
+  padding-left: 18px;
+  color: #d5d5d5;
+  line-height: 1.45;
+}
+@media (max-width: 1200px) {
+  #lp-shirt-fallen-trophy .hero {
+    min-height: 530px;
+    padding: 20px 32px 56px;
+  }
+  #lp-shirt-fallen-trophy .hero__slide.is-prev {
+    transform: translate(calc(-50% - 230px), -50%) scale(0.84);
+  }
+  #lp-shirt-fallen-trophy .hero__slide.is-next {
+    transform: translate(calc(-50% + 230px), -50%) scale(0.84);
+  }
+  #lp-shirt-fallen-trophy .hero__controls {
+    right: 40px;
+  }
+  #lp-shirt-fallen-trophy .event {
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin-bottom: 30px;
+    margin-left: 24px;
+  }
+  #lp-shirt-fallen-trophy .timeline::before {
+    left: 26px;
+    transform: none;
+  }
+  #lp-shirt-fallen-trophy .event--left-image .event__image {
+    order: 0;
+  }
+}
+@media (max-width: 768px) {
+  #lp-shirt-fallen-trophy .hero {
+    min-height: 480px;
+    padding: 16px 14px 54px;
+  }
+  #lp-shirt-fallen-trophy .hero__shirt {
+    width: 230px;
+    height: 298px;
+  }
+  #lp-shirt-fallen-trophy .hero__shirt::before {
+    width: 122px;
+    height: 29px;
+    top: 104px;
+  }
+  #lp-shirt-fallen-trophy .hero__shirt span {
+    top: 111px;
+    font-size: 8px;
+  }
+  #lp-shirt-fallen-trophy .hero__slide.is-prev {
+    opacity: 0;
+  }
+  #lp-shirt-fallen-trophy .hero__slide.is-next {
+    opacity: 0;
+  }
+  #lp-shirt-fallen-trophy .hero__nav {
+    font-size: 34px;
+    top: 46%;
+  }
+  #lp-shirt-fallen-trophy .hero__nav--prev {
+    left: 8px;
+  }
+  #lp-shirt-fallen-trophy .hero__nav--next {
+    right: 8px;
+  }
+  #lp-shirt-fallen-trophy .hero__controls {
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto;
+    bottom: 20px;
+  }
+  #lp-shirt-fallen-trophy .timeline {
+    padding: 8px 14px 34px;
+  }
+  #lp-shirt-fallen-trophy .timeline::before {
+    left: 14px;
+  }
+  #lp-shirt-fallen-trophy .event {
+    margin-left: 12px;
+  }
+  #lp-shirt-fallen-trophy .event__text {
+    min-height: 220px;
+    padding: 22px;
+  }
+  #lp-shirt-fallen-trophy .event__image {
+    min-height: 220px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  #lp-shirt-fallen-trophy * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+#lp-shirt-fallen-trophy section.trophy-section {
+  width: 100%;
+  margin-top: 10vw;
+}
+#lp-shirt-fallen-trophy section.trophy-section .start-journey {
+  color: #FFF;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+#lp-shirt-fallen-trophy section.trophy-section .years-champions {
+  text-align: center;
+}
+#lp-shirt-fallen-trophy section.trophy-section .years-champions .year-card {
+  max-width: 1620px;
+}
+@media (max-width: 1100px) {
+  #lp-shirt-fallen-trophy section.trophy-section .years-champions .year-card.left .card-content {
+    flex-direction: column-reverse;
+  }
+}
+#lp-shirt-fallen-trophy section.trophy-section .years-champions .year-card.left .card-content .champion-info {
+  align-items: flex-start;
+  padding-left: 35px;
+  text-align: left;
+  background: linear-gradient(270deg, #000 0%, #16181B 100%);
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+@media (max-width: 1100px) {
+  #lp-shirt-fallen-trophy section.trophy-section .years-champions .year-card.left .card-content .champion-info {
+    flex-direction: row;
+  }
+}
+@media (max-width: 650px) {
+  #lp-shirt-fallen-trophy section.trophy-section .years-champions .year-card.left .card-content .champion-info {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+}
+#lp-shirt-fallen-trophy section.trophy-section .years-champions .year-card.left .card-content .champion-info .trophy-icon {
+  margin-left: -15px;
+}
+@media (max-width: 1200px) {
+  #lp-shirt-fallen-trophy section.trophy-section .years-champions .year-card.left .card-content .champion-info .trophy-icon {
+    margin-left: 0;
+  }
+}
+@media (max-width: 1100px) {
+  #lp-shirt-fallen-trophy section.trophy-section .years-champions .year-card.left .card-content .champion-info .trophy-icon {
+    margin-right: 40px !important;
+  }
+}
+@media (max-width: 650px) {
+  #lp-shirt-fallen-trophy section.trophy-section .years-champions .year-card.left .card-content .champion-info .trophy-icon {
+    margin: 0 0 20px !important;
+  }
+}
+#lp-shirt-fallen-trophy section.trophy-section .years-champions .year-card.left .card-content .champion-info p {
+  padding-right: 15px;
+}
+@media (max-width: 1100px) {
+  #lp-shirt-fallen-trophy section.trophy-section .years-champions .year-card.right .card-content {
+    flex-direction: column;
+  }
+}
+#lp-shirt-fallen-trophy section.trophy-section .years-champions .year-card.right .card-content .champion-info {
+  align-items: flex-end;
+  text-align: right;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-right: 35px;
+  background: linear-gradient(-270deg, #000 0%, #16181B 100%);
+}
+@media (max-width: 1100px) {
+  #lp-shirt-fallen-trophy section.trophy-section .years-champions .year-card.right .card-content .champion-info {
+    flex-direction: row-reverse;
+  }
+}
+@media (max-width: 650px) {
+  #lp-shirt-fallen-trophy section.trophy-section .years-champions .year-card.right .card-content .champion-info {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+}
+#lp-shirt-fallen-trophy section.trophy-section .years-champions .year-card.right .card-content .champion-info .trophy-icon {
+  margin-right: -15px;
+}
+@media (max-width: 1200px) {
+  #lp-shirt-fallen-trophy section.trophy-section .years-champions .year-card.right .card-content .champion-info .trophy-icon {
+    margin-right: 0;
+  }
+}
+@media (max-width: 1100px) {
+  #lp-shirt-fallen-trophy section.trophy-section .years-champions .year-card.right .card-content .champion-info .trophy-icon {
+    margin-left: 40px !important;
+  }
+}
+@media (max-width: 650px) {
+  #lp-shirt-fallen-trophy section.trophy-section .years-champions .year-card.right .card-content .champion-info .trophy-icon {
+    margin: 0 0 20px !important;
+  }
+}
+#lp-shirt-fallen-trophy section.trophy-section .years-champions .year-card.right .card-content .champion-info p {
+  padding-left: 15px;
+}
+#lp-shirt-fallen-trophy section.trophy-section .years-champions .year-card .card-content {
+  flex-direction: row;
+  height: 100%;
+}
+#lp-shirt-fallen-trophy section.trophy-section .years-champions .year-card .card-content .champion-info {
+  width: 42%;
+  height: -webkit-fill-available;
+  height: -moz-available;
+  height: stretch;
+}
+@media (max-width: 1100px) {
+  #lp-shirt-fallen-trophy section.trophy-section .years-champions .year-card .card-content .champion-info {
+    width: 70vw;
+    height: auto;
+    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center !important;
+    padding: 50px 10px;
+  }
+}
+#lp-shirt-fallen-trophy section.trophy-section .years-champions .year-card .card-content .champion-info .trophy-icon {
+  width: auto;
+  height: auto;
+  margin-bottom: 15px;
+}
+@media (max-width: 1400px) {
+  #lp-shirt-fallen-trophy section.trophy-section .years-champions .year-card .card-content .champion-info .trophy-icon {
+    max-width: 90px;
+  }
+}
+@media (max-width: 1100px) {
+  #lp-shirt-fallen-trophy section.trophy-section .years-champions .year-card .card-content .champion-info .trophy-icon {
+    margin-bottom: 0 !important;
+    margin-right: 20px;
+  }
+}
+#lp-shirt-fallen-trophy section.trophy-section .years-champions .year-card .card-content .champion-info h4 {
+  color: #FFF;
+  font-family: "Saira", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  margin-left: 23px;
+  letter-spacing: 2px;
+}
+@media (max-width: 1400px) {
+  #lp-shirt-fallen-trophy section.trophy-section .years-champions .year-card .card-content .champion-info h4 {
+    font-size: 30px;
+    line-height: 30px;
+    margin-left: 0px;
+  }
+}
+#lp-shirt-fallen-trophy section.trophy-section .years-champions .year-card .card-content .champion-info h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: linear-gradient(270deg, #4F2902 0%, #EDBC5D 100%);
+  background-clip: text;
+  margin-left: 23px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (max-width: 1400px) {
+  #lp-shirt-fallen-trophy section.trophy-section .years-champions .year-card .card-content .champion-info h5 {
+    font-size: 17px;
+    margin-left: 0px;
+  }
+}
+#lp-shirt-fallen-trophy section.trophy-section .years-champions .year-card .card-content .champion-info p {
+  color: #FFF;
+  max-width: 500px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 15px 0 0px 23px;
+}
+@media (max-width: 1400px) {
+  #lp-shirt-fallen-trophy section.trophy-section .years-champions .year-card .card-content .champion-info p {
+    font-size: 12px;
+    margin-left: 0px;
+  }
+}
+#lp-shirt-fallen-trophy section.trophy-section .years-champions .year-card .card-content .img-champion {
+  width: 58%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  padding: 10px;
+  background: linear-gradient(to bottom, #EAB95B 0%, #D0A14D 15%, #B6893E 30%, #9C712E 50%, #835920 70%, #694111 85%, #5e3206 100%);
+}
+@media (max-width: 1100px) {
+  #lp-shirt-fallen-trophy section.trophy-section .years-champions .year-card .card-content .img-champion {
+    width: 70vw;
+    height: auto;
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 650px) {
+  #lp-shirt-fallen-trophy section.trophy-section .years-champions .year-card .card-content .img-champion {
+    width: 100%;
+  }
+}
+#lp-shirt-fallen-trophy section.trophy-section .years-champions .year-card .card-content .img-champion img {
+  width: 100vw;
+  max-width: 100%;
+}
+#lp-shirt-fallen-trophy html,
+#lp-shirt-fallen-trophy body,
+#lp-shirt-fallen-trophy div,
+#lp-shirt-fallen-trophy span,
+#lp-shirt-fallen-trophy applet,
+#lp-shirt-fallen-trophy object,
+#lp-shirt-fallen-trophy iframe,
+#lp-shirt-fallen-trophy h1,
+#lp-shirt-fallen-trophy h2,
+#lp-shirt-fallen-trophy h3,
+#lp-shirt-fallen-trophy h4,
+#lp-shirt-fallen-trophy h5,
+#lp-shirt-fallen-trophy h6,
+#lp-shirt-fallen-trophy p,
+#lp-shirt-fallen-trophy blockquote,
+#lp-shirt-fallen-trophy pre,
+#lp-shirt-fallen-trophy a,
+#lp-shirt-fallen-trophy abbr,
+#lp-shirt-fallen-trophy acronym,
+#lp-shirt-fallen-trophy address,
+#lp-shirt-fallen-trophy big,
+#lp-shirt-fallen-trophy cite,
+#lp-shirt-fallen-trophy code,
+#lp-shirt-fallen-trophy del,
+#lp-shirt-fallen-trophy dfn,
+#lp-shirt-fallen-trophy em,
+#lp-shirt-fallen-trophy img,
+#lp-shirt-fallen-trophy ins,
+#lp-shirt-fallen-trophy kbd,
+#lp-shirt-fallen-trophy q,
+#lp-shirt-fallen-trophy s,
+#lp-shirt-fallen-trophy samp,
+#lp-shirt-fallen-trophy small,
+#lp-shirt-fallen-trophy strike,
+#lp-shirt-fallen-trophy strong,
+#lp-shirt-fallen-trophy sub,
+#lp-shirt-fallen-trophy sup,
+#lp-shirt-fallen-trophy tt,
+#lp-shirt-fallen-trophy var,
+#lp-shirt-fallen-trophy b,
+#lp-shirt-fallen-trophy u,
+#lp-shirt-fallen-trophy i,
+#lp-shirt-fallen-trophy center,
+#lp-shirt-fallen-trophy dl,
+#lp-shirt-fallen-trophy dt,
+#lp-shirt-fallen-trophy dd,
+#lp-shirt-fallen-trophy ol,
+#lp-shirt-fallen-trophy ul,
+#lp-shirt-fallen-trophy li,
+#lp-shirt-fallen-trophy fieldset,
+#lp-shirt-fallen-trophy form,
+#lp-shirt-fallen-trophy label,
+#lp-shirt-fallen-trophy legend,
+#lp-shirt-fallen-trophy table,
+#lp-shirt-fallen-trophy caption,
+#lp-shirt-fallen-trophy tbody,
+#lp-shirt-fallen-trophy tfoot,
+#lp-shirt-fallen-trophy thead,
+#lp-shirt-fallen-trophy tr,
+#lp-shirt-fallen-trophy th,
+#lp-shirt-fallen-trophy td,
+#lp-shirt-fallen-trophy article,
+#lp-shirt-fallen-trophy aside,
+#lp-shirt-fallen-trophy canvas,
+#lp-shirt-fallen-trophy details,
+#lp-shirt-fallen-trophy embed,
+#lp-shirt-fallen-trophy figure,
+#lp-shirt-fallen-trophy figcaption,
+#lp-shirt-fallen-trophy footer,
+#lp-shirt-fallen-trophy header,
+#lp-shirt-fallen-trophy hgroup,
+#lp-shirt-fallen-trophy menu,
+#lp-shirt-fallen-trophy nav,
+#lp-shirt-fallen-trophy output,
+#lp-shirt-fallen-trophy ruby,
+#lp-shirt-fallen-trophy section,
+#lp-shirt-fallen-trophy summary,
+#lp-shirt-fallen-trophy time,
+#lp-shirt-fallen-trophy mark,
+#lp-shirt-fallen-trophy audio,
+#lp-shirt-fallen-trophy video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+#lp-shirt-fallen-trophy {
+  /* HTML5 display-role reset for older browsers */
+}
+#lp-shirt-fallen-trophy article,
+#lp-shirt-fallen-trophy aside,
+#lp-shirt-fallen-trophy details,
+#lp-shirt-fallen-trophy figcaption,
+#lp-shirt-fallen-trophy figure,
+#lp-shirt-fallen-trophy footer,
+#lp-shirt-fallen-trophy header,
+#lp-shirt-fallen-trophy hgroup,
+#lp-shirt-fallen-trophy menu,
+#lp-shirt-fallen-trophy nav,
+#lp-shirt-fallen-trophy section {
+  display: block;
+}
+#lp-shirt-fallen-trophy body {
+  line-height: 1;
+}
+#lp-shirt-fallen-trophy ol,
+#lp-shirt-fallen-trophy ul {
+  list-style: none;
+}
+#lp-shirt-fallen-trophy blockquote,
+#lp-shirt-fallen-trophy q {
+  quotes: none;
+}
+#lp-shirt-fallen-trophy blockquote:before,
+#lp-shirt-fallen-trophy blockquote:after,
+#lp-shirt-fallen-trophy q:before,
+#lp-shirt-fallen-trophy q:after {
+  content: "";
+  content: none;
+}
+#lp-shirt-fallen-trophy table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+#lp-shirt-fallen-trophy section.quality {
+  width: 100%;
+}
+#lp-shirt-fallen-trophy section.quality.custom .container-trophy {
+  padding: 2vw 5vw;
+}
+#lp-shirt-fallen-trophy section.quality .container-trophy {
+  width: 100%;
+  padding: 9.6vw 5.7vw;
+  border-radius: 25px;
+  border: 1px solid #000;
+  background: #121416;
+}
+#lp-shirt-fallen-trophy section.quality .print {
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media (max-width: 1300px) {
+  #lp-shirt-fallen-trophy section.quality .print {
+    flex-direction: column-reverse;
+  }
+}
+#lp-shirt-fallen-trophy section.quality .print .left {
+  max-width: 33vw;
+  text-align: left;
+}
+@media (max-width: 1300px) {
+  #lp-shirt-fallen-trophy section.quality .print .left {
+    text-align: center;
+    max-width: 80vw;
+    margin-top: 50px;
+  }
+}
+#lp-shirt-fallen-trophy section.quality .print .left h4 {
+  color: #FFF;
+  font-family: "Saira", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  margin-bottom: 5px;
+}
+#lp-shirt-fallen-trophy section.quality .print .left h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  background: linear-gradient(270deg, #4F2902 0%, #EDBC5D 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+#lp-shirt-fallen-trophy section.quality .print .left p {
+  color: #FFF;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+@media (max-width: 1300px) {
+  #lp-shirt-fallen-trophy section.quality .print .right {
+    margin-top: 100px;
+  }
+  #lp-shirt-fallen-trophy section.quality .print .right img {
+    width: 100%;
+    max-margin: 30%;
+  }
+}
+#lp-shirt-fallen-trophy .flex-lp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#lp-shirt-fallen-trophy .line-lp {
+  width: 10px;
+  height: 100px;
+  position: relative;
+  z-index: 0;
+  background: linear-gradient(180deg, #EDBC5D 0%, #4F2902 100%);
+  margin: 0 auto;
+}
+#lp-shirt-fallen-trophy .container-trophy {
+  max-width: 1620px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+#lp-shirt-fallen-trophy .reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+#lp-shirt-fallen-trophy .reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+}/*# sourceMappingURL=main.css.map */
